@@ -1,0 +1,227 @@
+###########################################################
+#                                                         #
+#      NPCWarehouse Default Language File (English)       #
+#                                                         #
+#     Use this file as a template for other languages     #
+#                                                         #
+###########################################################
+
+### Language Pack Settings ###
+plugin-version=0.9.2
+
+# Authors is a list of names separated by commas with no spaces (ex. jeremytrains,zsscooby,bukkit)
+authors=jeremytrains
+
+############
+#
+# Language Messages
+#
+# An underscore for a message will cause the plugin to read that text from the default language file (English)
+#
+############
+
+# Console Log Messages
+
+log.enable.setupplugins=Setting up linked plugins
+log.enable.pluginsetupcomplete=Linked plugins setup!
+log.enable.setupcmdhand=Setting up command handler...
+log.enable.cmdhandsetupcomplete=Command handler setup successfully!
+log.enable.setupnpcman=Setting up npc manager...
+log.enable.npcmansetupcomplete=NPC manager setup successfully!
+log.enable.loadingdata=Loading npc data...
+log.enable.dataloaded=NPC Data loaded successfully!
+log.enable.setuplisteners=Setting up listeners...
+log.enable.listenerssetupcomplete=Listeners setup successfully!
+log.enable.numnpcsloaded=%num% NPC(s) have been loaded
+
+log.disable.savingdata=Saving NPC data
+log.disable.savesuccess=NPC data saved successfully!
+log.disable.disabled=NPCWarehouse v%version% by jeremytrains is now disabled
+
+log.plugin.setup=Setting up %plugin%...
+log.plugin.pluginfound=Found and will use plugin %plugname% for %plugin%
+log.plugin.pluginnotfound=%plugin% not detected! %plugin% features will be disabled.
+
+log.converter.loaderror=Error in loading data from old file! <The scanner was null!>
+log.converter.otherformats=Converting from other formats to v0.8 format (from v0.2, v0.6.2, or 404T formats)...
+
+log.npcfile.saveerror=Could not save file (npcs.yml)!
+
+
+# Command Messages
+cmd.error.usage=%red%Invalid command usage! Use '/npc help' for help
+cmd.error.console=You need to be a player to access that command!
+cmd.error.argument=%red%The argument %yellow%%arg%%red% is invalid. Use '/npc help' for help!
+cmd.error.permission=%red%You do not have permission to do that!
+cmd.error.select=%red%You need to select an NPC first
+cmd.error.owner=%red%You need to be %npc%'s owner to do that!
+
+cmd.generic.defaultmessage=Hello!
+
+cmd.create.error.money=%red%You need %money% more to do that
+cmd.create.error.maxnpcs=This server has reached the maximum number of allowed NPCs (1,000). Your NPC will not be created.
+cmd.create.success=%yellow%%npc%%darkgray% was born! %green%<ID: %id%>
+
+cmd.move.error.offlineplayer=%red%That player is not online!
+cmd.move.success=%yellow%%npc%%green% was moved to your location
+
+cmd.rename.error.namelength=_
+cmd.rename.success=%yellow%npc%'s%green% name was changed to %yellow%%newname%
+
+cmd.item.error.npchandempty=%red%That NPC isn't holding anything!
+cmd.item.error.playerhandempty=%red%You can't have an NPC hold air! If you want to take the item in the npc's hand back, try %green%/npc item clear
+cmd.item.success.clear=%yellow%%npc%%green% gave back the %yellow%%item%
+cmd.item.success.hold=%yellow%%npc%%green% was successfully given a %yellow%%item%
+
+cmd.age.success=_
+
+cmd.armor.error.notarmor=%red%That item is not armor
+cmd.armor.success.cleared=%yellow%%npc%'s%green% armor was cleared
+cmd.armor.success.given=%green%You gave %yellow%%npc%%green% a %yellow%%armor%%green% to wear!
+
+cmd.select.error.invalidid=%red%Invalid NPC ID
+cmd.select.success=%green%You selected %yellow%%npc% <ID: %id%>
+
+cmd.list.title=NPC List
+
+cmd.message.success.reset=%yellow%%npc%'s%green% messages have been reset
+cmd.message.success.add=%yellow%%npc%%green% has added %yellow%%message%%green% to his/her list of messages
+cmd.message.success.remove=%yellow%%npc%%green% will no longer say anything that contains the phrase %yellow%%phrase%
+
+cmd.skin.error.disabled=%red%This feature is currently disabled
+cmd.skin.error.nospout=%red%Spout must be enabled to use this feature
+cmd.skin.success=%yellow%%npc%'s%green% skin was changed to %yellow%%skin%
+cmd.skin.word.defaultskin=default skin
+
+cmd.cape.success.clear=%yellow%%npc%%green% took off his cape
+cmd.cape.success.add=%yellow%npc%'s%green% cape has been set to %yellow%%url%
+
+cmd.owner.success=%yellow%%npc%'s%green% owner was set to %yellow%%player%
+
+cmd.lookat.success.begin=%yellow%%npc%%green% will now look at players
+cmd.lookat.success.end=%yellow%%npc%%green% will stop looking at players
+
+cmd.follow.success.begin=%yellow%%npc%%green% is now following you
+cmd.follow.success.stop=%yellow%%npc%%green% will not stop following you
+
+cmd.reload.success=%green%NPCWarehouse config successfully reloaded[NL]%green%All NPC data successfully saved and reloaded
+
+cmd.format.success=%yellow%%npc%%green% will now talk in the format of %yellow%%format%
+
+cmd.help.error.invalidpage=%red%Invalid page number
+cmd.help.title=NPCWarehouse Help Page %page%/%tot%
+cmd.help.title.note=[] are required, <> are optional
+cmd.help.help=Displays the help page
+cmd.help.list=Lists all loaded NPCs
+cmd.help.age=Tells you the NPC's age
+cmd.help.select=Selects the NPC with the specified id
+cmd.help.create=Creates an NPC
+cmd.help.remove=Removes the NPC from the game
+cmd.help.rename=Sets the NPC's name
+cmd.help.move=Moves the NPC to your/player's location
+cmd.help.message.add=Adds a message for the NPC to say
+cmd.help.message.rem=Removes any messages that include the phrase
+cmd.help.message.clear=Removes all messages and adds "%defaultmsg%"
+cmd.help.item=Gives the NPC an item from your hand/clears the item
+cmd.help.skin=Sets the NPC's skin to the specified url - leave url blank to reset
+cmd.help.cape=Sets the NPC's cape to the specified url - leave url blank to reset
+cmd.help.owner=Sets the NPC's owner
+cmd.help.lookat=Toggles if an NPC looks at a player
+cmd.help.follow=The NPC follows you, or the specified player
+
+
+# MailMan Commands
+
+cmdmail.error.syntax=%red%Invalid command syntax! Use %black%/mailman help%red% for help.
+cmdmail.error.notmailman=%red%That NPC is not a mailman!
+cmdmail.error.notregistered=%red%That mailman is not registered
+cmdmail.error.notlinked=%red%That mailman is not linked!
+cmdmail.error.generic.player=%red%An error has occurred while performing your command. Please check the server console for details.
+cmdmail.error.generic.console=An error has occurred while performing the command '%cmd%': %error%
+
+cmdmail.getip.success=%green%Your server's IP is %ip%
+
+cmdmail.toggle.success=%yellow%%npc%%green% is now a MailMan
+
+cmdmail.register.error.alreadyregistered=%red%That NPC is already registered
+cmdmail.register.error.invalidip=%red%Invalid IP Address
+cmdmail.register.error.datarestored=%red%That MailMan was already registered, but the local data was lost. The data was downloaded to your server and your MailMan's data was successfully restored.
+cmdmail.register.success=%yellow%%npc%%green% is now registered to the NPC with the id %yellow%%id%%green% on %yellow%%ip%
+
+cmdmail.unregister.error.notregistered=%red%That NPC is not registered!
+cmdmail.unregister.success=%yellow%%npc%%green% is now unregistered. The mailman that %yellow%%npc%%green% was connected to will be unregistered as well.
+
+cmdmail.send.error.money=%red%You need %money% more to do that
+cmdmail.send.error.101=%red%Error in sending message (Error Code 101)
+cmdmail.send.success=%green%Message sent!
+
+cmdmail.check.title=%blue%%player%'s Mailbox
+cmdmail.check.empty=%gray%Mailbox Empty
+
+cmdmail.read.error.invalidMID=%red%Invalid Message ID
+cmdmail.read.word.message=Message:
+cmdmail.read.word.from=From: %player% on %ip%
+
+cmdmail.help.help=Shows this help page
+cmdmail.help.getip=Shows your server's ip (to use in the register command)
+cmdmail.help.toggle=Converts the selected NPC into a mailman
+cmdmail.help.register=Links the mailman wit the specified remote mailman (enter in your own IP for a mailman in your server). IPs MAY NOT be domain names. They MUST be xx.xxx.xx.xxx (not mc.myserver.com)
+cmdmail.help.unregister=Unregisteres the mailman (To change the remote mailman or delete the NPC). The mailman will unregister automatically upon deletion.
+cmdmail.help.send=Sends a message to the specified player
+cmdmail.help.check=Checks for new mail
+cmdmail.help.read=Displays the specified message
+
+
+# Guardian Commands
+
+cmdguard.error.notguardian=%red%That NPC is not a guardian
+
+cmdguard.toggle.error.alreadyguard=%red%That NPC is already a guardian!
+cmdguard.toggle.success=%yellow%%npc%%green% is not a guardian!
+
+cmdguard.addflag.error.invalidflag=%red%Invalid Flag
+cmdguard.addflag.error.playernotfound=%red%Player not found
+cmdguard.addflag.error.factionnotfound=%red%Faction not found
+cmdguard.addflag.success=%green%The flag %yellow%%flag%%green% has been added to %yellow%%npc%
+
+cmdguard.remflag.success=%green%The flag %yellow%%flag%%green% has been removed from %yellow%%npc%
+
+cmdguard.flags.word.flags=Flags
+
+cmdguard.flags.word.allflags=All Flags
+cmdguard.flags.success.note=%aqua%In addition, you can flag players and factions using the flag %blue%p:[name]%aqua% and %blue%f:[name]
+
+cmdguard.aggro.success=%green%Set %yellow%%npc%'s%green% aggressivness to %yellow%%aggro%
+
+cmdguard.help.help=Shows this help page
+cmdguard.help.toggle=Converts the selected NPC into a guardian
+cmdguard.help.flags=Shows all of the NPC's flags
+cmdguard.help.addflag=Adds a flag to an NPC
+cmdguard.help.remflag=Removes a flag from an NPC
+cmdguard.help.allflags=Shows a list of all available flags
+cmdguard.help.aggro=Toggles the NPC's aggressivness
+
+
+# Miner Commands
+
+cmdminer.error.notminer=%red%%npc% is not a miner!
+
+cmdminer.toggle.error.alreadyminer=%red%%npc% is already a miner!
+cmdminer.toggle.success=%yellow%%npc%%green% is now a miner
+
+cmdminer.mine.error.invalidtask=%red%Invalid Mining Task Type
+cmdminer.mine.error.nopickaxe=%red%%npc% does not have a pickaxe to use!
+cmdminer.mine.error.generic.player=%red%An error has occurred with your npc's mining task. Check server log for error report
+cmdminer.mine.error.generic.console=An error has occurred with %npc%'s mining task %tostring%. Please tell the plugin owner that the count was: %count%
+cmdminer.mine.end.pickaxe=%gold%%npc%'s pickaxe has broken!
+cmdminer.mine.end.block=%gold%%npc% has reached %block%!
+cmdminer.mine.success=%yellow%%npc%'s%green% mining task has been completed!
+cmdminer.mine.success.collectitems=%green%You can collect your items now
+
+cmdminer.inventory.success=%green%Now showing %yellow%%npc%'s%green% inventory
+
+cmdminer.help.help=Shows this help page
+cmdminer.help.toggle=Converst the selected NPC into a miner
+cmdminer.help.inventory=Opens the NPCs mining inventory
+cmdminer.help.mine=Gives the selected Miner the specified task at your location
+cmdminer.help.availabletasks=The current mining tasks available are:
