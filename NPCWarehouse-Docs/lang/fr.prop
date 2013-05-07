@@ -1,0 +1,250 @@
+###########################################################
+#                                                         #
+#      NPCWarehouse French Language File                  #
+#       by Sébastien QUEROL aka 'Usfame'                  #
+#                                                         #
+#                                                         #
+###########################################################
+#                .---.
+#               |   '.|  __      ASCII.co.uk/art/drwho   art made by snd
+#               | ___.--'  )
+#             _.-'_` _%%%_/
+#          .-'%%% a: a %%%
+#              %%  L   %%_
+#              _%\'=' |  /-.__
+#           .-' / )--' #/     '\
+#          /'  /  /---'(    :   \
+#         /   |  /( /|##|  \     |
+#        /   ||# | / | /|   \    \
+#        |   ||##| I \/ |   |   _|
+#        |   ||: | o  |#|   |  / |
+#        |   ||  / I  |:/  /   |/
+#        |   ||  | o   /  /    /
+#        |   \|  | I  |. /    /
+#         \  /|##| o  |.|    /
+#          \/ \::|/\_ /  ---'|
+#           \ |\ |    |     :\
+#           | |  /     \...' |
+#           | |# |/\    \    |
+#           | | :|  |    |   |
+#           | |  |  |    |   |
+
+### Language Pack Settings ###
+plugin-version=0.9.2
+
+# Authors is a list of names separated by commas with no spaces (ex. jeremytrains,zsscooby,bukkit)
+authors=jeremytrains
+
+############
+#
+# Language Messages
+#
+# An underscore for a message will cause the plugin to read that text from the default language file (English)
+#
+############
+
+# Console Log Messages
+
+log.enable.setupplugins=Configuration des plugins liés
+log.enable.pluginsetupcomplete=Plugins liés configurés!
+log.enable.setupcmdhand=Preparation du gestionnaire de commandes...
+log.enable.cmdhandsetupcomplete=Gestionnaire de commandes configuré!
+log.enable.setupnpcman=Preparation du gestionnaire de PNJ...
+log.enable.npcmansetupcomplete=Gestionnaire de PNJ configuré!
+log.enable.loadingdata=Chargement des données des PNJ...
+log.enable.dataloaded=Données de PNJ chargées!
+log.enable.setuplisteners=Preparation des listeners...
+log.enable.listenerssetupcomplete=Listeners configurés!
+log.enable.numnpcsloaded=%num% PNJ(s) ont étés chargés
+
+log.disable.savingdata=Sauvegarde des données de PNJ
+log.disable.savesuccess=Sauvegarde des données réussie!
+log.disable.disabled=NPCWarehouse version %version% par jeremytrains est maintenant désactivé
+
+log.plugin.setup=Configuration de %plugin%...
+log.plugin.pluginfound=%plugname% trouvé et sera utilisé pour %plugin%
+log.plugin.pluginnotfound=%plugin% non détecté! Les fonctionnalités de %plugin% seront désactivées.
+
+log.converter.loaderror=Erreur lors du chargement des données de l'ancien fichier! <Le scanner n'a rien trouvé>
+log.converter.otherformats=Conversion depuis les autres formats depuis v0.8 (ou depuis les formats en v0.2, v0.6.2, ou formats 404T)...
+
+log.npcfile.saveerror=Sauvegarde du fichier impossible (npcs.yml)!
+
+
+# Command Messages
+cmd.error.usage=%red%Commande invalide, pour ne pas refaire cette erreur, veuillez consulter l'aide avec /npc help
+cmd.error.console=Vous devez être un joueur pour acceder à cette commande!
+cmd.error.argument=%red%L'argument %yellow%%arg%%red% est invalide. Consultez l'aide (/npc help)
+cmd.error.permission=%red%Vous n'avez pas la ou les permission(s) de faire ça!
+cmd.error.select=%red%Vous devez selectionner un PNJ d'abord
+cmd.error.owner=%red%Vous devez être le possesseur de %npc% pour faire ça!
+
+cmd.generic.defaultmessage=Salut!
+
+cmd.create.error.money=%red%Vous avez besion de %money% en plus pour faire ça !
+cmd.create.error.maxnpcs=Ce serveur a atteint le nombre maximum de PNJs (1000). Votre PNJ ne sera pas crée.
+cmd.create.success=%yellow%%npc%%darkgray% est né! %green%<ID: %id%>
+
+cmd.move.error.offlineplayer=%red%Ce joueur n'est pas en ligne!
+cmd.move.success=%yellow%%npc%%green% was moved to your locationa été déplacé la ou vous êtes.
+
+cmd.rename.error.namelength=_
+cmd.rename.success=%yellow%npc%s%green% : nom changé pour %yellow%%newname%
+
+cmd.item.error.npchandempty=%red%Ce PNJ ne tient rien dans ses mains!
+cmd.item.error.playerhandempty=%red%Votre PNJ ne peut pas tenir de l'air! Si vous voulez prendre l'objet de sa main, essayez la commande %green%/npc item clear
+cmd.item.success.clear=%yellow%%npc%%green% : a rendu l'objet %yellow%%item%
+cmd.item.success.hold=%yellow%%npc%%green% : a reçu l'objet %yellow%%item%
+
+cmd.age.success=_
+
+cmd.armor.error.notarmor=%red%Cet objet n'est pas une armure
+cmd.armor.success.cleared=%yellow%%npc%%green% : armure enlevée
+cmd.armor.success.given=%green%Vous avez donné %yellow%%armor%%green% à %yellow%%npc%%green%  
+
+cmd.select.error.invalidid=%red%ID de PNJ invalide
+cmd.select.success=%green%Vous avez selectionné %yellow%%npc% <ID: %id%>
+
+cmd.list.title=Liste des PNJs
+
+cmd.message.success.reset=%yellow%%npc%%green% : messages éffacés
+cmd.message.success.add=%yellow%%npc%%green% a ajouté %yellow%%message%%green% à sa liste de messages
+cmd.message.success.remove=%yellow%%npc%%green% ne dira plus rien contenant la phrase/mot %yellow%%phrase%
+
+cmd.skin.error.disabled=%red%Cette fonctionalité est désactivée
+cmd.skin.error.nospout=%red%Spout doit être activé pour activer de cette fonctionnalité
+cmd.skin.success=%yellow%%npc%%green% : peau (skin) changé pour %yellow%%skin%
+cmd.skin.word.defaultskin=Peau (skin) par défaut
+
+cmd.cape.success.clear=%yellow%%npc%%green% a enlevé sa cape
+cmd.cape.success.add=%yellow%npc%%green% : cape changée pour %yellow%%url%
+
+cmd.owner.success=%yellow%%npc%%green% : propriétaire changé, c'est maintenant %yellow%%player%
+
+cmd.lookat.success.begin=%yellow%%npc%%green% ne regardera pas les joueurs
+cmd.lookat.success.end=%yellow%%npc%%green% Ne regardera plus les joueurs
+
+cmd.follow.success.begin=%yellow%%npc%%green% vous suit
+cmd.follow.success.stop=%yellow%%npc%%green% ne s'arretera pas de vous suivre
+
+cmd.reload.success=%green%Configuration de NPCWarehouse sauvegardée[NL]%green%Toutes les données des PNJs ont été sauvegardées et chargées avec succès!
+
+cmd.format.success=%yellow%%npc%%green% parlera maintenant dans la format %yellow%%format%
+
+cmd.help.error.invalidpage=%red%N° de page invalide
+cmd.help.title=Aide de NPCWarehouse : %page% sur %tot%
+cmd.help.title.note=[] : nécéssaire, <> : optionnel/facultatif
+cmd.help.help=Affiche cette page
+cmd.help.list=Liste tout les PNJs chargés
+cmd.help.age=Vous dit l'age du PNJ
+cmd.help.select=Sélectionne le PNJ (entrez son ID)
+cmd.help.create=Crée un PNJ
+cmd.help.remove=Supprimme le PNJ (entrez son ID)
+cmd.help.rename=Donne un nom au PNJ
+cmd.help.move=Déplace le PNJ (à vous ou à un autre joueur)
+cmd.help.message.add=Ajoute un message au PNJ
+cmd.help.message.rem=Supprimme tout message incluant le mot/la phrase
+cmd.help.message.clear=Supprimme tout les messages et ajoute celui-là "%defaultmsg%"
+cmd.help.item=Donne au PNJ l'item dans votre main/le lui enlève.
+cmd.help.skin=Attribue un skin (peau) à partir de l'URL (adresse web) spécifiée - ne précisez pas d'url pour remettre par défaut
+cmd.help.cape=Attribue une cape à partir de l'URL (adresse web) spécifiée - ne précisez pas d'url pour remettre par défaut
+cmd.help.owner=Attribue le propriétaire du PNJ séléctionné
+cmd.help.lookat=Change le fait que le PNJ regared ou ne regarde pas les joueurs
+cmd.help.follow=Le PNJ suit vous ou le joueur spécifié
+
+
+# MailMan Commands
+
+cmdmail.error.syntax=%red%SYntaxe de commande invalide! Utilisez %black%/mailman help%red% pour obtenir de l'aide.
+cmdmail.error.notmailman=%red%Ce PNJ n'est pas un postier!
+cmdmail.error.notregistered=%red%Ce postier n'est pas référencé
+cmdmail.error.notlinked=%red%Ce postier n'est pas lié!
+cmdmail.error.generic.player=%red%Une erreur est survenue durant l'éxécution de votre commande. Vérifiez la console du serveur pour plus de détails.
+cmdmail.error.generic.console=Une erreur est survenue durant l'éxécution de la commande '%cmd%': %error%
+
+cmdmail.getip.success=%green%L'IP de votre serveur est %ip%
+
+cmdmail.toggle.success=%yellow%%npc%%green% est désormais un postier
+
+cmdmail.register.error.alreadyregistered=%red%Ce PNJ est déjà référencé
+cmdmail.register.error.invalidip=%red%Adresse IP invalide
+cmdmail.register.error.datarestored=%red%Ce postier est déjà référencé, mais les données ocales ont été perdues/non trouvées. Les données ont étés téléchargées vers votre serveur avec succès !
+cmdmail.register.success=%yellow%%npc%%green% is now registered to the NPC with the id %yellow%%id%%green% on %yellow%%ip%
+
+cmdmail.unregister.error.notregistered=%red%Ce PNJ n'est pas référencé!
+cmdmail.unregister.success=%yellow%%npc%%green% est maintenant dé-référencé. Le postier que %yellow%%npc%%green% a connecté aura le même sort.
+
+cmdmail.send.error.money=%red%Vous devez avoir %money% de plus pour faire ça
+cmdmail.send.error.101=%red%Erreur lors de l'envoi du message (Code 101)
+cmdmail.send.success=%green%Message envoyé!
+
+cmdmail.check.title=La boîte aux lettres de %blue%%player%
+cmdmail.check.empty=%gray%Boîte aux lettres vide
+
+cmdmail.read.error.invalidMID=%red%ID message invalide
+cmdmail.read.word.message=Message:
+cmdmail.read.word.from=De: %player% avec l'IP %ip%
+
+cmdmail.help.help=Affiche cette page
+cmdmail.help.getip=Affiche l'IP de votre serveur (utiliser dans l'enregistrement)
+cmdmail.help.toggle=Convertit le PNJ sélectionné en postier
+cmdmail.help.register=Lie le postier spécifié avec le postier distant selectionné (entrer votre propre IP pour un postier se trouvant sur votre serveur). Les IP ne doivent pas être un nom de domaine. Elles doivent ressembler à ça %green%xxx.xxx.xxx.xxx %white%(et non %red%mc.myserver.com%white%)
+cmdmail.help.unregister=Dé-référence le postier (Pour changer le postier distant ou supprimmer le PNJ). Le postier sera automatiquement supprimmé/dé-référencé.
+cmdmail.help.send=Envoie un message au joueur spécifié
+cmdmail.help.check=Verifie les nouveux mails
+cmdmail.help.read=Affiche le message spécifié
+
+
+# Guardian Commands
+
+cmdguard.error.notguardian=%red%Ce PNJ n'est pas un gardien
+
+cmdguard.toggle.error.alreadyguard=%red%Ce PNJ est déjà un gardien!
+cmdguard.toggle.success=%yellow%%npc%%green% n'est pas un gardien!
+
+cmdguard.addflag.error.invalidflag=%red%Drapeau invalide
+cmdguard.addflag.error.playernotfound=%red%Joueur non trouvé
+cmdguard.addflag.error.factionnotfound=%red%Faction non trouvé
+cmdguard.addflag.success=%green%Le drapeau %yellow%%flag%%green% a bien été ajouté à %yellow%%npc%
+
+cmdguard.remflag.success=%green%Le drapeau %yellow%%flag%%green% a bien été enlevé de %yellow%%npc%
+
+cmdguard.flags.word.flags=Drapeau
+
+cmdguard.flags.word.allflags=Tout les drapeaux
+cmdguard.flags.success.note=%aqua%En addition, vous pouvez ajouter un drapeau à un joueur ou à une faction %blue%p:[name]%aqua% and %blue%f:[name]
+
+cmdguard.aggro.success=%green%Modifie l'agressivité de %yellow%%npc%%green% à %yellow%%aggro%
+
+cmdguard.help.help=Affiche cette page
+cmdguard.help.toggle=Convertit le PNJ séléctionné en gardien (un vrai gardien, pas un gardien d'immeuble comme M. Gérard X)
+cmdguard.help.flags=Montre les drapeaux de tout les autres PNJ
+cmdguard.help.addflag=Ajoute un drapeau à un PNJ
+cmdguard.help.remflag=Enlève un drapeau à un PNJ
+cmdguard.help.allflags=Montre la liste de tout les drapeaux disponibles
+cmdguard.help.aggro=Change l'agressivité du PNJ selectionné
+
+
+# Miner Commands
+
+cmdminer.error.notminer=%red%%npc% n'est pas un mineur!
+
+cmdminer.toggle.error.alreadyminer=%red%%npc% est déjà un mineur!
+cmdminer.toggle.success=%yellow%%npc%%green% est désormais un mineur
+
+cmdminer.mine.error.invalidtask=%red%Tâche de mineur invalide
+cmdminer.mine.error.nopickaxe=%red%%npc% n'a pas de pioche à utiliser!
+cmdminer.mine.error.generic.player=%red%Une erreur est survenue durant la tâche de minage attribuée. Vérifiez les logs du serveur pour tenter de corriger ce probleme
+cmdminer.mine.error.generic.console=Une erreur est survenue avec la tâche de minage de %npc%: %tostring%. Dites au Proprio du plugin que le compte était de: %count%
+cmdminer.mine.end.pickaxe=%gold%%npc%: Pioche cassée !
+cmdminer.mine.end.block=%gold%%npc% a atteint le bloc %block%!
+cmdminer.mine.success=%yellow%%npc%%green% : tâche de minage terminée!
+cmdminer.mine.success.collectitems=%green%Vous pouvez maintenant récuperer vos objets 
+
+cmdminer.inventory.success=%green%Voici l'inventaire de %yellow%%npc%%green%
+
+cmdminer.help.help=Affiche cette page
+cmdminer.help.toggle=Convertit le PNJ en mineur
+cmdminer.help.inventory=Ouvre l'inventaire de minage du PNJ spécifié
+cmdminer.help.mine=Donne une tâche au mineur spécifié (là ou vous êtes)
+cmdminer.help.availabletasks=Les tâche de minage disponibles sont :
